@@ -1,0 +1,141 @@
+/** {
+	border: 1px solid black;
+}*/
+
+
+body {
+	background: url(../images/beach.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	width: 100%;
+	color: #233559;
+}
+
+#header {
+	margin: 0 auto;
+	font-family: 'Questrial', sans-serif;
+	padding: 10px;
+	width: 100%;
+	text-align: center;
+}
+
+#gameName {
+	font-family: 'Lobster Two', cursive;
+	/*font-family: 'Poiret One', cursive;*/
+}
+
+h1 p{
+	margin: 0 auto;
+}
+
+.score {
+	font-family: 'Questrial', sans-serif;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0px 177px;
+	font-size: 20px;
+}
+
+.button {
+	font-family: 'Questrial', sans-serif;
+	margin: 0 auto;
+	text-align: center;
+	padding: 5px, 10px;
+
+}
+
+.p1 {
+	background-color: rgba(255, 255, 255, .4);
+	padding: 10px 20px;
+}
+
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+.container {
+	padding: 0;
+	margin: 0 auto;
+	margin-top: 25px;
+	margin-bottom: 50px;
+}
+
+.container td {
+	height: 150px;
+	width: 150px;
+	text-align: center;
+}
+
+.container tr td {
+	width: 150px; 
+	height: 150px; 
+	border: 3px solid #233559; 
+	border-style: ridge;
+	text-align: center;
+}
+
+.container tr td:hover {
+	background-color: rgba(255, 255, 255, .5);
+    box-shadow: 0 0 5px rgba(0,0,0,.75);
+	/*cursor: url(https://cdn0.iconfinder.com/data/icons/typicons-2/24/anchor-128.png), auto;*/
+}
+
+
+
+/*.row {
+	height: 150px;
+	width: 200px;
+	padding: 14px;
+  	margin: 0 auto;
+  	list-style: none;
+}*/
+
+/*#square1, #square4, #square7 {
+	border-right: 5px solid black;
+} 
+
+#square2, #square5, #square8 {
+	border-right: 5px solid black;
+} 
+
+#square1, #square2, #square3 {
+	border-bottom: 5px solid black;
+} 
+
+#square4, #square5, #square6 {
+	border-bottom: 5px solid black;
+} */
+
+
+
+/*.coinFlip {
+	text-align: center;
+	margin: auto;
+	display: block;
+}
+
+img{
+	height: 300px;
+	width: 290px;
+	text-align: center;
+	margin: 0 auto;
+	display: block;
+	padding-top: 50px;
+	padding-bottom: 20px;
+}
+
+button{
+	text-align: center;
+	margin: auto;
+	font-family: 'Roboto', sans-serif;
+}
+
+p{
+	text-align: center;
+	margin: auto;
+	padding-bottom: 20px;
+}*/
