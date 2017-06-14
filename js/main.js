@@ -30,6 +30,7 @@ var player_one = 1;
 
 function display_input(box){
     var element = document.getElementById(box);
+    var td = document.getElementsByTagName('td');
 
     // var X = url('http://www.burroughsmarine.com/boat_anchor.png');
     //if the element is empty, return a value
@@ -39,6 +40,10 @@ function display_input(box){
         element.innerHTML = 'X';
         element.className = 'X';
         element.innerHTML = ('<img src=\"images/anchor-128.png\">');
+        element.cancelBubble = true;
+        // element.preventDefault();
+        // element.stopPropagation();
+        // element.freeze(element);
 
         player_one = 0;
     //player 2 = O
@@ -46,6 +51,10 @@ function display_input(box){
         element.innerHTML = "O";
         element.className = 'O';
         element.innerHTML = ('<img src=\"images/lobster-icon.png\">');
+       
+
+        // element.stopPropagation();
+        // element.freeze(element);
         
         player_one = 1;
 
@@ -95,8 +104,10 @@ button.addEventListener("click", function () {
 
 function reset(){
     var tds = document.getElementsByTagName('td');
+    console.log('working')
     for(var i = 0; i < tds.length; i++) {
         tds[i].innerHTML = ''
+        tds[i].classList.remove('X', 'O');
     }
 
 
