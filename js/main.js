@@ -84,8 +84,10 @@ function checkForWinner() { //make a var for each cell and set them equal to cla
         }else if((cell1 !== undefined) && (cell2 !== undefined) && (cell3 !== undefined) && (cell4 !== undefined) && (cell5 !== undefined) && (cell6 !== undefined) && (cell7 !== undefined) && (cell8 !== undefined) && (cell9 !== undefined)){
             alert('Tie game! Try again.'); //if the win is undefined, make the players aware that it's a draw game
             reset(); //reset the game board
+
         
         }else{
+
 
         }
 
@@ -108,7 +110,13 @@ function reset(){ //create a function to reset the game
     for(var i = 0; i < tds.length; i++) { //make a loop to go through each box to clear it
         tds[i].innerHTML = '' //clear the box
         tds[i].classList.remove('X', 'O'); //remove each class when resetting the board
+        tds[i].removeAttribute('class');
     }
 
 
 }
+
+
+
+
+
