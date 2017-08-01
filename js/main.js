@@ -1,4 +1,3 @@
-
 //GLOBAL VARIABLES/////////////////////////////////////////////////////////////
 
 var game = { //game defines the game and who/what is involved
@@ -26,7 +25,7 @@ var player2Score = document.getElementById('player2');
 
 
 
-//EVENT LISTENER FUNCTION//////////////////////////////////////////////////////
+//EVENT LISTENER//////////////////////////////////////////////////////
 
 function display_input(box){ //function to call something once a box is clicked
 
@@ -55,7 +54,7 @@ function display_input(box){ //function to call something once a box is clicked
 
 
 
-//CHECK WINNER FUNCTION////////////////////////////////////////////////////////
+//CHECK WINNER////////////////////////////////////////////////////////
 
 function checkForWinner() { //make a var for each cell and set them equal to class so the if statemenets can read the class of each cell
     var cell1 = $('#one').attr('class'); 
@@ -107,6 +106,7 @@ button.addEventListener("click", function () { //once the button is clicked, add
 
 function reset(){ //create a function to reset the game
     var tds = document.getElementsByTagName('td'); //make a variable to address each box in the game board
+    
     for(var i = 0; i < tds.length; i++) { //make a loop to go through each box to clear it
         tds[i].innerHTML = '' //clear the box
         tds[i].classList.remove('X', 'O'); //remove each class when resetting the board
@@ -115,8 +115,5 @@ function reset(){ //create a function to reset the game
 
 
 }
-
-
-
 
 
